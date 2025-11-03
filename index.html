@@ -523,24 +523,85 @@
             background-color: #2980b9;
         }
         
-        /* CSS untuk memperbaiki tampilan tabel di perangkat mobile */
+        /* CSS Tambahan untuk Memperbaiki Tampilan di Android */
 @media (max-width: 768px) {
+    .card-navigation {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .nav-btn-info {
+        width: 100%;
+    }
+    
+    .flash-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .card-content {
+        padding: 20px;
+        min-height: 250px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-formula {
+        font-size: 1.4rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .modal-formula {
+        font-size: 1.6rem;
+    }
+    
+    .symbol-content {
+        padding: 10px;
+    }
+    
+    .symbol-item {
+        margin-bottom: 6px;
+        font-size: 0.9rem;
+    }
+    
+    .symbol-item strong {
+        min-width: 70px;
+    }
+    
+    /* CSS untuk tabel di Android */
     .table-container {
-        overflow-x: auto;
         margin: 10px 0;
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-
+    
     table {
         font-size: 0.8rem;
         min-width: 500px;
     }
-
+    
     th, td {
         padding: 8px 10px;
         white-space: nowrap;
     }
-
+    
     th {
         font-size: 0.85rem;
         position: sticky;
@@ -548,116 +609,389 @@
         background-color: var(--primary);
         z-index: 10;
     }
-
+    
     tr:nth-child(even) {
         background-color: #f8f9fa;
     }
-
+    
     tr:hover {
         background-color: #e9ecef;
     }
+    
+    /* CSS untuk memperkecil formula dalam tabel */
+    .formula-symbol {
+        font-size: 0.8em;
+    }
+    
+    .formula-sup {
+        font-size: 0.65em;
+    }
+    
+    .formula-sub {
+        font-size: 0.65em;
+    }
+    
+    .fraction {
+        font-size: 0.75em;
+    }
 }
 
+/* CSS Tambahan untuk Tampilan yang Lebih Responsif */
 @media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-section select {
+        font-size: 0.9rem;
+    }
+    
+    .mode-section {
+        width: 100%;
+    }
+    
+    .mode-btn {
+        flex: 1;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .flash-card-container {
+        margin-bottom: 20px;
+    }
+    
+    .card-category {
+        font-size: 0.8rem;
+    }
+    
+    .card-number {
+        font-size: 0.8rem;
+    }
+    
+    .card-mode-indicator {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+    
+    .card-hint {
+        font-size: 0.7rem;
+    }
+    
+    .stat-card {
+        width: 150px;
+        padding: 15px;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .nav-btn-info {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .modal-close {
+        font-size: 1.2rem;
+    }
+    
+    .modal-title {
+        font-size: 1.3rem;
+    }
+    
+    .modal-category {
+        font-size: 0.9rem;
+    }
+    
+    .modal-formula {
+        font-size: 1.4rem;
+    }
+    
+    .modal-description {
+        font-size: 0.95rem;
+    }
+    
+    .modal-notes h4 {
+        font-size: 1.1rem;
+    }
+    
+    .modal-notations {
+        font-size: 0.85rem;
+    }
+    
+    .symbol-modal-title {
+        font-size: 1.3rem;
+    }
+    
+    .symbol-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .symbol-item {
+        font-size: 0.85rem;
+    }
+    
+    /* CSS untuk tabel di 480px */
     .table-container {
         margin: 8px 0;
     }
-
+    
     table {
         font-size: 0.75rem;
         min-width: 400px;
     }
-
+    
     th, td {
         padding: 6px 8px;
     }
-
+    
     th {
         font-size: 0.8rem;
     }
-
-    .card-formula {
-        font-size: 1.1rem;
+    
+    /* CSS untuk memperkecil formula dalam tabel */
+    .formula-symbol {
+        font-size: 0.75em;
+    }
+    
+    .formula-sup {
+        font-size: 0.6em;
+    }
+    
+    .formula-sub {
+        font-size: 0.6em;
+    }
+    
+    .fraction {
+        font-size: 0.7em;
     }
 }
 
+/* CSS Tambahan untuk Tampilan yang Optimal di Perangkat Kecil */
 @media (max-width: 360px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo i {
+        font-size: 1.5rem;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .filter-section select {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+    
+    .mode-section {
+        width: 100%;
+    }
+    
+    .mode-btn {
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .flash-card-container {
+        margin-bottom: 15px;
+    }
+    
+    .flash-card {
+        border-radius: 8px;
+    }
+    
+    .card-header {
+        padding: 12px 15px;
+    }
+    
+    .card-category {
+        font-size: 0.75rem;
+    }
+    
+    .card-number {
+        font-size: 0.75rem;
+    }
+    
+    .card-content {
+        padding: 15px;
+        min-height: 200px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-formula {
+        font-size: 1.2rem;
+    }
+    
+    .card-description {
+        font-size: 0.9rem;
+    }
+    
+    .card-hint {
+        font-size: 0.65rem;
+    }
+    
+    .card-mode-indicator {
+        font-size: 0.65rem;
+        padding: 3px 6px;
+    }
+    
+    .card-navigation {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .nav-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn-info {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .progress-bar {
+        margin-bottom: 20px;
+    }
+    
+    .stat-card {
+        width: 120px;
+        padding: 12px;
+    }
+    
+    .stat-value {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .modal-content {
+        width: 98%;
+        padding: 15px;
+    }
+    
+    .modal-close {
+        font-size: 1.1rem;
+    }
+    
+    .modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .modal-category {
+        font-size: 0.85rem;
+    }
+    
+    .modal-formula {
+        font-size: 1.2rem;
+    }
+    
+    .modal-description {
+        font-size: 0.9rem;
+    }
+    
+    .modal-notes h4 {
+        font-size: 1rem;
+    }
+    
+    .modal-notations {
+        font-size: 0.8rem;
+    }
+    
+    .symbol-modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .symbol-content {
+        padding: 8px;
+    }
+    
+    .symbol-content h4 {
+        font-size: 1rem;
+    }
+    
+    .symbol-item {
+        font-size: 0.8rem;
+    }
+    
+    /* CSS untuk tabel di 360px */
     .table-container {
         margin: 5px 0;
     }
-
+    
     table {
         font-size: 0.7rem;
         min-width: 350px;
     }
-
+    
     th, td {
         padding: 4px 6px;
     }
-
+    
     th {
         font-size: 0.75rem;
     }
-
-    .card-formula {
-        font-size: 1rem;
+    
+    /* CSS untuk memperkecil formula dalam tabel */
+    .formula-symbol {
+        font-size: 0.7em;
     }
-}
-
-/* CSS untuk memperbaiki tampilan modal tabel */
-.modal .table-container {
-    margin: 15px 0;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.modal table {
-    font-size: 0.9rem;
-    min-width: 600px;
-}
-
-.modal th, .modal td {
-    padding: 10px 12px;
-}
-
-.modal th {
-    font-size: 0.95rem;
-}
-
-/* CSS untuk memperbaiki tampilan tabel di kategori vektor-skalar */
-#card-formula .table-container {
-    margin: 10px 0;
-}
-
-#card-formula table {
-    font-size: 0.85rem;
-    min-width: 450px;
-}
-
-#card-formula th, #card-formula td {
-    padding: 8px 10px;
-}
-
-#card-formula th {
-    font-size: 0.9rem;
-}
-
-/* CSS untuk memperbaiki tampilan tabel di modal keterangan */
-#symbol-modal .table-container {
-    margin: 10px 0;
-}
-
-#symbol-modal table {
-    font-size: 0.8rem;
-    min-width: 400px;
-}
-
-#symbol-modal th, #symbol-modal td {
-    padding: 6px 8px;
-}
-
-#symbol-modal th {
-    font-size: 0.85rem;
+    
+    .formula-sup {
+        font-size: 0.55em;
+    }
+    
+    .formula-sub {
+        font-size: 0.55em;
+    }
+    
+    .fraction {
+        font-size: 0.65em;
+    }
 }
 </style>
 </head>
