@@ -524,10 +524,13 @@
         @media (max-width: 768px) {
 
             .card-navigation {
-    position: fixed;
+   position: sticky;
     bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #f8f9fa;
     z-index: 10;
+    margin: 0; /* pastikan gak ada margin dari parent */
 }
 
 
