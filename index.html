@@ -525,6 +525,67 @@
         
         /* CSS Tambahan untuk Memperbaiki Tampilan di Android */
 @media (max-width: 768px) {
+    .card-navigation {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .nav-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .nav-btn-info {
+        width: 100%;
+    }
+    
+    .flash-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .card-content {
+        padding: 20px;
+        min-height: 250px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+    }
+    
+    .card-formula {
+        font-size: 1.4rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    
+    .modal-formula {
+        font-size: 1.6rem;
+    }
+    
+    .symbol-content {
+        padding: 10px;
+    }
+    
+    .symbol-item {
+        margin-bottom: 6px;
+        font-size: 0.9rem;
+    }
+    
+    .symbol-item strong {
+        min-width: 70px;
+    }
+    
+    /* CSS untuk tabel di Android */
     .table-container {
         margin: 5px 0;
         overflow-x: auto;
@@ -594,7 +655,126 @@
     }
 }
 
+/* CSS Tambahan untuk Tampilan yang Lebih Responsif */
 @media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .filter-section select {
+        font-size: 0.9rem;
+    }
+    
+    .mode-section {
+        width: 100%;
+    }
+    
+    .mode-btn {
+        flex: 1;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .flash-card-container {
+        margin-bottom: 20px;
+    }
+    
+    .card-category {
+        font-size: 0.8rem;
+    }
+    
+    .card-number {
+        font-size: 0.8rem;
+    }
+    
+    .card-mode-indicator {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+    
+    .card-hint {
+        font-size: 0.7rem;
+    }
+    
+    .stat-card {
+        width: 150px;
+        padding: 15px;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .nav-btn-info {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .modal-close {
+        font-size: 1.2rem;
+    }
+    
+    .modal-title {
+        font-size: 1.3rem;
+    }
+    
+    .modal-category {
+        font-size: 0.9rem;
+    }
+    
+    .modal-formula {
+        font-size: 1.4rem;
+    }
+    
+    .modal-description {
+        font-size: 0.95rem;
+    }
+    
+    .modal-notes h4 {
+        font-size: 1.1rem;
+    }
+    
+    .modal-notations {
+        font-size: 0.85rem;
+    }
+    
+    .symbol-modal-title {
+        font-size: 1.3rem;
+    }
+    
+    .symbol-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .symbol-item {
+        font-size: 0.85rem;
+    }
+    
+    /* CSS untuk tabel di 480px */
     .table-container {
         margin: 3px 0;
     }
@@ -630,7 +810,174 @@
     }
 }
 
+/* CSS Tambahan untuk Tampilan yang Optimal di Perangkat Kecil */
 @media (max-width: 360px) {
+    .container {
+        padding: 5px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo i {
+        font-size: 1.5rem;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .filter-section select {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+    
+    .mode-section {
+        width: 100%;
+    }
+    
+    .mode-btn {
+        flex: 1;
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .flash-card-container {
+        margin-bottom: 15px;
+    }
+    
+    .flash-card {
+        border-radius: 8px;
+    }
+    
+    .card-header {
+        padding: 12px 15px;
+    }
+    
+    .card-category {
+        font-size: 0.75rem;
+    }
+    
+    .card-number {
+        font-size: 0.75rem;
+    }
+    
+    .card-content {
+        padding: 15px;
+        min-height: 200px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .card-formula {
+        font-size: 1.2rem;
+    }
+    
+    .card-description {
+        font-size: 0.9rem;
+    }
+    
+    .card-hint {
+        font-size: 0.65rem;
+    }
+    
+    .card-mode-indicator {
+        font-size: 0.65rem;
+        padding: 3px 6px;
+    }
+    
+    .card-navigation {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .nav-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn-info {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .progress-bar {
+        margin-bottom: 20px;
+    }
+    
+    .stat-card {
+        width: 120px;
+        padding: 12px;
+    }
+    
+    .stat-value {
+        font-size: 1.3rem;
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;
+    }
+    
+    .modal-content {
+        width: 98%;
+        padding: 15px;
+    }
+    
+    .modal-close {
+        font-size: 1.1rem;
+    }
+    
+    .modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .modal-category {
+        font-size: 0.85rem;
+    }
+    
+    .modal-formula {
+        font-size: 1.2rem;
+    }
+    
+    .modal-description {
+        font-size: 0.9rem;
+    }
+    
+    .modal-notes h4 {
+        font-size: 1rem;
+    }
+    
+    .modal-notations {
+        font-size: 0.8rem;
+    }
+    
+    .symbol-modal-title {
+        font-size: 1.2rem;
+    }
+    
+    .symbol-content {
+        padding: 8px;
+    }
+    
+    .symbol-content h4 {
+        font-size: 1rem;
+    }
+    
+    .symbol-item {
+        font-size: 0.8rem;
+    }
+    
+    /* CSS untuk tabel di 360px */
     .table-container {
         margin: 2px 0;
     }
@@ -665,50 +1012,7 @@
         font-size: 0.6em;
     }
 }
-
-/* CSS untuk memperkecil header tabel */
-@media (max-width: 768px) {
-    .table-container th {
-        padding: 4px 6px;
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .table-container th {
-        padding: 3px 5px;
-        font-size: 0.65rem;
-    }
-}
-
-@media (max-width: 360px) {
-    .table-container th {
-        padding: 3px 4px;
-        font-size: 0.6rem;
-    }
-}
-
-/* CSS untuk memperkecil sel tabel */
-@media (max-width: 768px) {
-    .table-container td {
-        padding: 4px 6px;
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .table-container td {
-        padding: 3px 5px;
-        font-size: 0.65rem;
-    }
-}
-
-@media (max-width: 360px) {
-    .table-container td {
-        padding: 3px 4px;
-        font-size: 0.6rem;
-    }
-}
+</style>
 </head>
 <body>
     <!-- Warning Modal -->
