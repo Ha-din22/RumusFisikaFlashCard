@@ -400,16 +400,17 @@
         .formula-symbol {
             font-family: 'Times New Roman', Times, serif;
             font-style: italic;
+            font-size: 0.9em;
         }
         
         .formula-sup {
             vertical-align: super;
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
         
         .formula-sub {
             vertical-align: sub;
-            font-size: 0.8em;
+            font-size: 0.7em;
         }
         
         /* Fraction styling */
@@ -417,16 +418,17 @@
             display: inline-block;
             vertical-align: middle;
             text-align: center;
-            margin: 0 5px;
+            margin: 0 2px;
+            font-size: 0.85em;
         }
         
         .fraction .numerator {
             border-bottom: 1px solid #333;
-            padding: 0 5px;
+            padding: 0 3px;
         }
         
         .fraction .denominator {
-            padding: 0 5px;
+            padding: 0 3px;
         }
         
         /* Formula notation */
@@ -521,7 +523,7 @@
             background-color: #2980b9;
         }
         
-       /* CSS untuk memperbaiki tampilan tabel di perangkat mobile */
+        /* CSS untuk memperbaiki tampilan tabel di perangkat mobile */
 @media (max-width: 768px) {
     .table-container {
         overflow-x: auto;
@@ -602,40 +604,6 @@
     }
 }
 
-/* CSS untuk memperbaiki tampilan formula dalam tabel */
-.formula-symbol {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-size: 0.9em;
-}
-
-.formula-sup {
-    vertical-align: super;
-    font-size: 0.7em;
-}
-
-.formula-sub {
-    vertical-align: sub;
-    font-size: 0.7em;
-}
-
-.fraction {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    margin: 0 2px;
-    font-size: 0.85em;
-}
-
-.fraction .numerator {
-    border-bottom: 1px solid #333;
-    padding: 0 3px;
-}
-
-.fraction .denominator {
-    padding: 0 3px;
-}
-
 /* CSS untuk memperbaiki tampilan modal tabel */
 .modal .table-container {
     margin: 15px 0;
@@ -691,9 +659,7 @@
 #symbol-modal th {
     font-size: 0.85rem;
 }
-
-}
-    </style>
+</style>
 </head>
 <body>
     <!-- Warning Modal -->
